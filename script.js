@@ -103,6 +103,33 @@ const updateWeatherInfo = (data) => {
     document.getElementById('speed').innerHTML = ((data.wind.speed * 18) / 5).toFixed(2);
     document.getElementById('time').innerHTML = new Date().toLocaleTimeString();
 };
-case 'wind':
+const updateWeatherInfo = (data) => {
+        const weatherImage = document.querySelector('.center img');
+        const weatherText = document.getElementById('weather');
+    
+        console.log('Weather Condition:', data.weather[0].main.toLowerCase());
+    
+        switch (data.weather[0].main.toLowerCase()) {
+            case 'clear':
+                weatherImage.src = './resources/clear.gif';
+                break;
+            case 'clouds':
+                weatherImage.src = './resources/cloud.gif';
+                break;
+            case 'rain':
+                weatherImage.src = './resources/rain.gif';
+                break;
+            case 'wind':
                 weatherImage.src = './resources/wind.gif';
                 break;
+                case 'mist':
+                weatherImage.src = './resources/mist.gif';
+                break;
+            default:
+                console.log('No matching image for weather:', data.weather[0].main.toLowerCase());
+                weatherImage.src = ''; // Set a default image or leave it empty if none matches
+        }
+    
+        // Update weather text
+        weatherText.innerHTML = data.weather[0].main.toLowerCase();
+    };
