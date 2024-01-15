@@ -1,0 +1,108 @@
+@import url('https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: cursive;
+}
+
+body{
+        height: 100vh;
+}
+.lower, .upper{
+        height: 50%;
+}
+.upper{
+        background: rgb(126, 255, 255);
+        position: relative;
+        overflow: hidden;
+}
+.lower{
+        background: white;
+        padding: 20px;
+}
+.c1,.c2,.c3,.c4{
+        border-radius: 50%;
+        position: absolute;
+        left:0;
+        right:0;
+        margin: auto;
+}
+.c4{
+        height: 25vw;
+        width: 25vw;
+        background: #48b4bea4;
+        bottom: -12.5vw;   
+}
+.c3{
+        height: 50vw;
+        width: 50vw;
+        background: #48b4be87;
+        bottom: -25vw;
+}
+.c2{
+        height: 75vw;
+        width: 75vw;
+        background: #48b4be5f;
+        bottom: -37.5vw;
+}
+.c1{
+        height: 100vw;
+        width: 100vw;
+        background: #48b4be3e;
+        bottom: -50vw;
+}
+.addcity{
+        position: absolute;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgb(172, 172, 172);
+        border: none;
+        top: calc(50vh - 30px);
+        left: 0; right: 0; margin: auto;
+        font-size: 40px;
+        color: rgb(120, 120, 120);
+        padding-bottom: 5px;
+        cursor: pointer;
+}
+.addcity:hover{
+        transform: scale(1.4);
+}
+.flex{
+        display: flex;
+        column-gap: 10px;
+        align-items: center;
+}
+.citytime{
+        display: flex;
+        justify-content: space-between;
+        color: rgb(123, 123, 123);
+        font-size:10px;
+}
+.center{
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction: column;
+}
+.center img{
+        height: 150px;
+}
+.center div{
+        font-size: 8px;
+}
+#search{
+        position: absolute;
+        top: 150px;
+        left: 0; right: 0;
+        margin:auto;
+        width: 300px;
+        height: 40px;
+        border: none;
+        border-radius: 10px;
+        outline: none;
+        padding-left: 10px;
+        font-size: 24px;
+        display: none;
+}

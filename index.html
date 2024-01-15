@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather App</title>
+        <link rel="shortcut icon" href="https://cdn.jim-nielsen.com/ios/512/weather-2021-12-07.png" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="upper">
+                <div class="c1"></div>
+                <div class="c2"></div>
+                <div class="c3"></div>
+                <div class="c4"></div>
+                <input type="text" id="search" placeholder="Enter your city...">
+        </div>
+        <div class="lower">
+                <div class="citytime">
+                         
+                        <h1 class="flex"> 
+                               <i class="fi fi-rr-time-quarter-past"></i> 
+                                <span id="time">9:00AM</span> 
+                        </h1>
+                        <h1 id="citycountry"> Bengaluru, India </h1>
+                </div>
+                <div class="center">
+                        <img src="./resources/clear.gif" alt="">
+                        <p id="weather">sunny</p>
+                        <h1><span id="temp">56</span> <sup>o</sup>c</h1>
+                        <div> <h1>H: <span id="high">58</span> <sup>o</sup> L: <span id="low">38</span><sup>o</sup> </h1> </div>
+                        <p>Wind: <span id="speed">120</span>Km/h</p>
+                </div>
+        </div>
+        <button class="addcity">+</button>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="./script.js"></script>
+</body>
+</html>
