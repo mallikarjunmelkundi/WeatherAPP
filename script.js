@@ -103,3 +103,6 @@ const updateWeatherInfo = (data) => {
     document.getElementById('speed').innerHTML = ((data.wind.speed * 18) / 5).toFixed(2);
     document.getElementById('time').innerHTML = new Date().toLocaleTimeString();
 };
+case 'wind':
+                weatherImage.src = './resources/wind.gif';
+                break;
